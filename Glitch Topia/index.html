@@ -4,24 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitch Topia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme.css">
 </head>
-<nav>
-    <!-- logo at left -->
-    <!-- home redirect button -->
-     <a href="#home">Home</a>
-     <a href="#events">Events</a>
-     <a href="#competitions">Competitions</a>
-     <a href="#sponsors">Sponsors</a>
-
-     <!-- socials at rightmost -->
-</nav>
 <body>
+    <body class="bg-white text-gray-900">
+
+        <!-- Navbar -->
+        <nav class="fixed top-0 left-0 w-full bg-white/50 backdrop-blur-md shadow-md px-6 py-4 flex items-center justify-between z-50">
+
+            <div class="text-xl font-bold">LOGO</div>
+        
+
+            <div class="lg:hidden relative">
+                <button id="menu-btn" class="text-2xl focus:outline-none">☰</button>
+        
+
+                <div id="mobile-menu" class="hidden absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-md shadow-lg rounded-lg py-2">
+                    <a href="#home" class="block px-4 py-2 hover:bg-gray-200 transition-all duration-300 rounded">Home</a>
+                    <a href="#events" class="block px-4 py-2 hover:bg-gray-200 transition-all duration-300 rounded">Events</a>
+                    <a href="#competitions" class="block px-4 py-2 hover:bg-gray-200 transition-all duration-300 rounded">Competitions</a>
+                    <a href="#sponsors" class="block px-4 py-2 hover:bg-gray-200 transition-all duration-300 rounded">Sponsors</a>
+                </div>
+            </div>
+        
+
+            <div class="hidden lg:flex space-x-6">
+                <a href="#home" class="hover:underline transition-all duration-300">Home</a>
+                <a href="#events" class="hover:underline transition-all duration-300">Events</a>
+                <a href="#competitions" class="hover:underline transition-all duration-300">Competitions</a>
+                <a href="#sponsors" class="hover:underline transition-all duration-300">Sponsors</a>
+            </div>
+        
+            <div class="hidden lg:flex space-x-4">
+                <a href="#" class="hover:underline transition-all duration-300">🔗</a>
+                <a href="#" class="hover:underline transition-all duration-300">🔗</a>
+            </div>
+        </nav>
+        
+        <script>
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+        
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        </script>
+        
     <section class="mainarea">
         <h1>Glitch Topia</h1>
         <h2>2025</h2>
 
-        <img src="./Images/f8853b74e6274770bff954565147aa8f.png" alt="NST Logo">
-        <img src="./Images/Ajeenkya.png" alt="ADYPU Logo">
+        <div class="logos">
+        <img class="NST" src="./Images/f8853b74e6274770bff954565147aa8f.png" alt="NST Logo">
+        <img class="X" src="./Images/Transparent_X.png" alt="NST Logo">
+        <img class="ADY" src="./Images/Ajeenkya.png" alt="ADYPU Logo">
+        </div>
+        <h2>Presents</h2>
     </section> 
 
     <section class="Countdown">

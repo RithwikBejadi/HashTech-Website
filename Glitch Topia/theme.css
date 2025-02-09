@@ -1,0 +1,20 @@
+.NST{
+    height: 40px;
+    margin-right: 10px;
+}
+.ADY{
+    height: 40px;
+    margin-left: 10px;
+}
+.X{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 15px;
+}
+.logos{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

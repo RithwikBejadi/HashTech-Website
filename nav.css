@@ -1,20 +1,96 @@
-nav{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
     font-family: 'axiforma', sans-serif;
-    
+    background-color: rgba(0, 0, 0, 0.539);
 }
+#menu-toggle{
+    display: hide;
+}
+
+#logo {
+    height: 50px;
+}
+.hidden{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-left:auto;
+}
+
+#logo1{
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
 .link {
-    margin: 5px 25px;
     text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 7px;
 }
-.nav-links-1{
-    display: flex;
-    justify-content: center;
-    margin: 13px 10px;
-}
-.nav-links-2{
-    display: flex;
-    justify-content: center;
-    margin: 13px 10px;
+
+@media (max-width: 990px) {
+    .hamburger {
+        display: block; 
+    }
+    #logo1{
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -100%; /* Initially hidden above */
+        left: 0;
+        width: 100%;
+        background-color: rgba(222, 220, 220, 0.8);
+        text-align: center;
+        opacity: 0;
+        transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+
+    .nav-links a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+        color: black;
+        font-family: 'axiforma', sans-serif;
+        font-weight: 500;
+    }
+
+    .nav-links a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        top: 70px; /* Slides down smoothly */
+        opacity: 1;
+    }
+    #logo{
+        display: none;
+    }
 }

@@ -114,3 +114,18 @@ nav {
         display: none;
     }
 }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #2C328E, #00A69D, #DC166A, #EE3F27, #FBA930, #662D91);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

@@ -10,6 +10,7 @@ nav {
     padding: 10px 20px;
     font-family: 'axiforma', sans-serif;
     background-color: rgba(0, 0, 0, 0.539);
+    position: sticky;
 }
 #menu-toggle{
     display: hide;
@@ -47,6 +48,25 @@ nav {
     margin-top: 7px;
 }
 
+.nav-links a {
+    position: relative;
+    font-weight: 501;
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 @media (max-width: 990px) {
     .hamburger {
         display: block; 
@@ -59,7 +79,7 @@ nav {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: -100%; /* Initially hidden above */
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: rgba(222, 220, 220, 0.8);

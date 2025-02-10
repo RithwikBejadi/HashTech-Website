@@ -1,0 +1,20 @@
+nav{
+    display: flex;
+    justify-content: center;
+    font-family: 'axiforma', sans-serif;
+    
+}
+.link {
+    margin: 5px 25px;
+    text-decoration: none;
+}
+.nav-links-1{
+    display: flex;
+    justify-content: center;
+    margin: 13px 10px;
+}
+.nav-links-2{
+    display: flex;
+    justify-content: center;
+    margin: 13px 10px;
+}

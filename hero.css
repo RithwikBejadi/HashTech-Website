@@ -1,14 +1,14 @@
 body{
     font-family: 'axiforma', sans-serif;
 }
-.mainarea{
-height: 100%;
-}
-.events{
+.mainarea {
     height: 100%;
 }
-#heading{
-    font-size: 3.4rem;
+.events {
+    height: 100%;
+}
+#heading {
+    font-size: 3.8rem;
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@ height: 100%;
     font-weight: 500;
     width: 40%;
 }
-#event1{
+#event1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 5px;
@@ -27,7 +27,7 @@ height: 100%;
     font-weight: 500;
     width: 40%;
 }
-.sports{
+.sports {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,22 +58,30 @@ height: 100%;
     filter: blur(5px);
 }
 
-.sport-text {
+.hidden1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(133, 133, 133);
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s;
+    z-index: 11;
 }
 
-.sport:hover .sport-text {
+.sport:hover .hidden1 {
     opacity: 1;
 }
-.hidden1{
-    z-index: 11;
+@media (max-width: 768px) { 
+    .spimg {
+        filter: blur(5px);
+        transform: scale(1.1); 
+    }
+
+    .hidden1 {
+        opacity: 1 !important;
+    }
 }

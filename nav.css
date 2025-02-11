@@ -10,10 +10,9 @@ nav {
     padding: 10px 20px;
     font-family: 'axiforma', sans-serif;
     background-color: rgba(0, 0, 0, 0.539);
-    position: sticky;
 }
 #menu-toggle{
-    display: hide;
+    display: none;
 }
 
 #logo {
@@ -121,9 +120,10 @@ body {
     background: linear-gradient(135deg, #2C328E, #00A69D, #DC166A, #EE3F27, #FBA930, #662D91);
     background-size: 400% 400%;
     animation: gradientShift 10s ease infinite;
-    color: white;
+    color: white; /* Ensures text visibility */
 }
 
+/* Smooth gradient animation */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }

@@ -81,7 +81,7 @@ nav {
         top: -100%;
         left: 0;
         width: 100%;
-        background-color: rgba(222, 220, 220, 0.8);
+        background-color: rgba(189, 189, 189, 0.8);
         text-align: center;
         opacity: 0;
         transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;

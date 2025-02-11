@@ -7,6 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme.css">
+    <style>
+        body {
+    background: linear-gradient(135deg, #6e00ff, #ff00a0, #00d1ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style>
 </head>
 <body>
     <body class="bg-white text-gray-900">
@@ -57,23 +83,28 @@
         <h2>2025</h2>
 
         <div class="logos">
-        <img class="ADY" src="./Images/Ajeenkya.png" alt="ADYPU Logo">
+            <img src="Images/f8853b74e6274770bff954565147aa8f.png" class="NST" alt="NST logo"><img class="X" src="Images/./Transparent_X.png" alt="X"><img class="ADY" src="./Images/Ajeenkya.png" alt="ADYPU Logo">
         </div>
-        <h2>Presents</h2>
+        <h2>Glitch</h2>
     </section> 
 
     <section class="Countdown">
         <h1>Countdown</h1>
     </section>
 
-    <section class="Events">
+    <section class="Competetions">
         <h1>Events</h1>
-    <!-- Scrolling events here -->
+        <div class="competetions">
+            <img><button>Register</button>
+        </div>
+        <div class="competetions">
+            <img><button>Register</button>
+        </div>
+        <div class="competetions">
+            <img><button>Register</button>
+        </div>
     </section>
 
-    <section class="Competitions">
-        <h1>Competitions</h1>
-    </section>
 
     <section class="Sponsors">
         <h1>Sponsors</h1>

@@ -46,7 +46,10 @@
                 <div class="hidden1"><h2 class="spname">Cricket</h2>
                     <p class="date">Date: 1st-7th March</p>
                     <p class="time">Time: 12:30 PM - 05:30 PM</p>
-                    <a href=""><button class="more"><p>More Details</p></button></a>
+                    <div class="details">
+                    <button class="more"><p>More Details</p></button>
+                    <button class="close-btn">Close</button>
+                    </div>
                 </div>
             </div>
             <div class="sport">
@@ -125,6 +128,23 @@
             </div>
         </section>
     </section>
+
+    <script>
+        const moreDetailsBtn = document.querySelector('.more');
+        const closeBtn = document.querySelector('.close-btn');
+        const details = document.querySelector('.details');
+        const overlay = document.querySelector('.overlay');
+
+        moreDetailsBtn.addEventListener('click', () => {
+            details.classList.add('active');
+            overlay.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            details.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 
 </body>
 </html>
